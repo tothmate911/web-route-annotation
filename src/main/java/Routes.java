@@ -15,4 +15,9 @@ public class Routes {
         return "test2 POST";
     }
 
+    @WebRoute(path = "/user/")
+    public static String getUser(String userName) {
+        return "username: " + userName;
+    }
+
 }
